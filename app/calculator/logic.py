@@ -13,9 +13,9 @@ class Calculator(object):
         self.max_value = max_value
 
     def mul(self, a, b):
-        if(a < self.min_value || b < self.min_value) 
+        if a < self.min_value or b < self.min_value:
             raise ValueTooLowException("Value to low");
-        elif (a > self.max_value || b > self.max_value):
+        elif a > self.max_value or b > self.max_value:
             raise ValueTooHighException("Value to high");
         else:
             return a * b
