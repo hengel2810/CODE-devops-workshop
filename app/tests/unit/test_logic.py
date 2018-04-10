@@ -1,6 +1,6 @@
 from unittest import TestCase
 from calculator.logic import Calculator
-
+from calculator.logic import ValueTooHighException
 
 class CalculatorTests(TestCase):
     def test_mul(self):
