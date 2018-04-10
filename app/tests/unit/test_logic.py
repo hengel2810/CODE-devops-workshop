@@ -21,6 +21,6 @@ class CalculatorTests(TestCase):
         self.assertEqual(res, -25)
     def test_mul_with_to_high_number(self):
         c = Calculator()
-        self.assertRaises(c.mul(5000, 2))
+        self.assertRaises(ValueTooHighException, c.mul(5000, 2))
     def test_div(self):
         pass
